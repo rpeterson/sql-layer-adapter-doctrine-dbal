@@ -15,14 +15,14 @@ class FoundationDBSQLSchemaManagerTest extends SchemaManagerFunctionalTestCase
     protected function setUp()
     {
         $this->_conn = new Connection(
-            [
+           array(
                 'driverClass' => 'FDB\\SQL\\DBAL\\PDOFoundationDBSQLDriver',
                 'host' => $GLOBALS['db_host'],
                 'port' => $GLOBALS['db_port'],
                 'user' => $GLOBALS['db_username'],
                 'password' => $GLOBALS['db_password'],
                 'dbname' => $GLOBALS['db_name']
-            ],
+            ),
             new PDOFoundationDBSQLDriver(),
             new Configuration()
         );
