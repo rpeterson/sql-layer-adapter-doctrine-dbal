@@ -1,0 +1,27 @@
+{
+    "name": "fdb/sql-layer-doctrine-dbal",
+    "description": "Doctrine DBAL driver for FoundationDB SQL Layer",
+    "keywords": ["database", "dbal", "doctrine", "foundationdb", "driver"],
+    "homepage": "http://github.com/MMcM/sql-layer-doctrine-dbal",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SQL Layer team",
+            "email": "sql@foundationdb.com",
+            "homepage": "http://github.com/FoundationDB/sql-layer"
+        }
+    ],
+
+    "autoload": {
+        "psr-0": { "FDB\\SQL\\DBAL": "src/" }
+    },
+
+    "require": {
+        "php": ">=5.4.0",
+        "doctrine/dbal": "~2.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
