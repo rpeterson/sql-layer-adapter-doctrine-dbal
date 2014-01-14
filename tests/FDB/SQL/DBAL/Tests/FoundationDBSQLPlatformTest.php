@@ -6,7 +6,7 @@ use Doctrine\Tests\DBAL\Platforms\AbstractPlatformTestCase;
 use FDB\SQL\DBAL\FoundationDBSQLPlatform;
 use Doctrine\DBAL\Types\Type;
 
-class FoundationDBSqlPlatformTest extends AbstractPlatformTestCase
+class FoundationDBSQLPlatformTest extends AbstractPlatformTestCase
 {
     public function createPlatform()
     {

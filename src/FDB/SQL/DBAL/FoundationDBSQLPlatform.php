@@ -399,7 +399,10 @@ class FoundationDBSQLPlatform extends AbstractPlatform
                 $sql[] = "ALTER TABLE " . $diff->name . " " . $query;
             }
             if ($columnDiff->hasChanged('default')) {
-                $query = "ALTER " . $oldColumnName . $this->getDefaultValueDeclarationSQL($column->toArray());
+                $defaultClause = null === $column->getDefault()
+                    ? ' DROP DEFAULT'
+                    : $this->getDefaultValueDeclarationSQL($column->toArray());
+                $query = "ALTER " . $oldColumnName . $defaultClause;
                 $sql[] = "ALTER TABLE " . $diff->name . " " . $query;
             }
             if ($columnDiff->hasChanged('notnull')) {

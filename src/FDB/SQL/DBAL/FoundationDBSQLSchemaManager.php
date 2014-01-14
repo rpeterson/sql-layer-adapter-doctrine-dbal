@@ -80,7 +80,6 @@ class FoundationDBSQLSchemaManager extends AbstractSchemaManager
         }
 
         $params = $this->_conn->getParams();
-        $params["driverClass"] = "FDB\\SQL\\DBAL\\PDOFoundationDBSQLDriver";
         $params["dbname"] = "information_schema";
         $tmpPlatform = $this->_platform;
         $tmpConn = $this->_conn;

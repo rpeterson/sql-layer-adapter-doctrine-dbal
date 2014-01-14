@@ -1,8 +1,8 @@
 {
-    "name": "fdb/sql-layer-doctrine-dbal",
+    "name": "foundationdb/sql-layer-adapter-doctine-dbal",
     "description": "Doctrine DBAL driver for FoundationDB SQL Layer",
-    "keywords": ["database", "dbal", "doctrine", "foundationdb", "driver"],
-    "homepage": "http://github.com/MMcM/sql-layer-doctrine-dbal",
+    "keywords": ["database", "dbal", "doctrine", "fdb", "foundationdb", "driver"],
+    "homepage": "https://github.com/FoundationDB/sql-layer-adapter-doctine-dbal",
     "type": "library",
     "license": "MIT",
     "authors": [
