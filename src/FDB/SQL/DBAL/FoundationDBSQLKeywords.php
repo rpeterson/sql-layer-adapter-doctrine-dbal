@@ -24,9 +24,6 @@ use Doctrine\DBAL\Platforms\Keywords\KeywordList;
 
 /**
  * FoundationDB SQL layer KeywordList
- *
- * @author Padraig O'Sullivan <osullivan.padraig@gmail.com>
- * @since  2.4
  */
 class FoundationDBSQLKeywords extends KeywordList
 {

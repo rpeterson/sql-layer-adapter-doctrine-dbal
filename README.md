@@ -17,7 +17,7 @@ Add a dependency with @beta stability.
 
 # Configuring Symfony #
 
-Because this driver is bundled with Doctrine, it is not available in
+Because this driver is not currently bundled with Doctrine, it is not available in
 the driver menu and a tiny bit of reconfiguration is needed.
 
 * Download Symfony standard without vendors.
@@ -37,8 +37,8 @@ parameters:
     ...
 ```
 
-* Add the driver class to app/config/config.yml and comment out the
-  driver, which won't be recognized.
+* Add the driver class to app/config/config.yml and comment out the driver, which
+  won't be recognized.
 
 ```yaml
 doctrine:
@@ -49,3 +49,27 @@ doctrine:
 ```
 
 * ```php app/console doctrine:database:create``` should now run without error.
+
+# Contributing #
+
+We welcome pull requests to fix problems that you may encounter.
+
+## Running Tests ##
+
+In order to run unit tests, some pieces of Doctrine itself are needed. Here are the
+steps we follow to set it up.
+
+```bash
+composer update
+rm -rf vendor/doctrine
+composer update --prefer-source
+cd vendor/doctrine/dbal
+composer update
+```
+
+Then to run tests
+```bash
+cp phpunit.xml.dist phpunit.xml
+# (make any adjustments for database location)
+phpunit
+```

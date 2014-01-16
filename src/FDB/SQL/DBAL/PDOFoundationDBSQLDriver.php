@@ -24,9 +24,6 @@ use Doctrine\DBAL\Driver\PDOConnection;
 
 /**
  * Driver that connects to FoundationDB SQL layer through pdo_pgsql.
- *
- * @author Padraig O'Sullivan <osullivan.padraig@gmail.com>
- * @since  2.4
  */
 class PDOFoundationDBSQLDriver implements \Doctrine\DBAL\Driver
 {

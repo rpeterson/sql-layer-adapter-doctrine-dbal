@@ -29,9 +29,6 @@ use Doctrine\DBAL\Types\Type;
 
 /**
  * FoundationDB SQL layer Schema Manager
- *
- * @author Padraig O'Sullivan <osullivan.padraig@gmail.com>
- * @since  2.4
  */
 class FoundationDBSQLSchemaManager extends AbstractSchemaManager
 {

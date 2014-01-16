@@ -26,9 +26,6 @@ use Doctrine\DBAL\Schema\Table;
 
 /**
  * FoundationDB SQL layer platform.
- *
- * @author Padraig O'Sullivan <osullivan.padraig@gmail.com>
- * @since  2.4
  */
 class FoundationDBSQLPlatform extends AbstractPlatform
 {
