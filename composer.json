@@ -7,9 +7,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "SQL Layer team",
-            "email": "sql@foundationdb.com",
-            "homepage": "http://github.com/FoundationDB/sql-layer"
+            "name": "FoundationDB",
+            "email": "distribution@foundationdb.com",
+            "homepage": "http://foundationdb.com/layers/sql"
         }
     ],
 
