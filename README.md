@@ -1,6 +1,27 @@
 DBAL driver for FDB SQL Layer
 =============================
 
+# Prerequisites #
+
+* The FoundationDB SQL Layer should be installed and running.
+
+* PHP and the pgsql PDO driver should be installed.
+
+  * On Ubuntu, the latter is ```sudo apt-get install php5-pgsql```.
+
+* To check that everything is okay, run this from the command line, adjusting the
+  host name as needed.
+
+```php
+<?php
+$dbh = new PDO("pgsql:host=localhost port=15432 dbname=system");
+$stmt = $dbh->prepare('SELECT version()');
+$stmt->execute();
+$row = $stmt->fetch();
+echo $row[0] . "\n";
+?>
+```
+
 # Loading with Composer #
 
 Add a dependency with @beta stability.
