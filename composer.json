@@ -1,5 +1,5 @@
 {
-    "name": "foundationdb/sql-layer-adapter-doctine-dbal",
+    "name": "rpeterson/sql-layer-adapter-doctine-dbal",
     "description": "Doctrine DBAL driver for FoundationDB SQL Layer",
     "keywords": ["database", "dbal", "doctrine", "fdb", "foundationdb", "driver"],
     "homepage": "https://github.com/FoundationDB/sql-layer-adapter-doctine-dbal",
